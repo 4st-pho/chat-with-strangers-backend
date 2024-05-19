@@ -20,9 +20,9 @@ const matchingStrangers = async (stranger1ID: string, stranger2ID: string) => {
   const conversationData = {
     stranger1ID: stranger1ID,
     stranger2ID: stranger2ID,
-    isReaded: false,
-    isStranger1Chating: false,
-    isStranger2Chating: false
+    isSeen: false,
+    isStranger1Chatting: false,
+    isStranger2Chatting: false
   };
   await conversationRef.set(conversationData);
   updateUser(stranger1ID, {
